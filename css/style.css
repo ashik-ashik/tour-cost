@@ -1,0 +1,19 @@
+*{
+  box-sizing: border-box;
+  font-family: "Muli";
+}
+
+.tour-body{
+  background: url(../crew.jpg) center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.tour-box{
+  background: #00000094;
+}
+
+input[type='number']::-webkit-outer-spin-button,
+input[type='number']::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    appearance: none;
+}

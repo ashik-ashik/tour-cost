@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tour Costs Acccounting</title>
+  <link rel="shortcut icon" href="https://ashik-ashik.github.io/img/cool-shop/favicon/ashik.ico" type="image/x-icon">
+
+  <!-- fontawesome icons -->
+  <script src="https://kit.fontawesome.com/7776e10779.js" crossorigin="anonymous"></script>
+  <!-- tailwied css -->
+  <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+  <!-- my css -->
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+
+  <main>
+    <section class="tour-body w-full h-screen flex items-center justify-end">
+      <div class="container w-4/5 mx-auto">
+        <div class="w-3/5 p-5 rounded ml-auto tour-box">
+          <h2 class="text-3xl font-bold text-center text-white">Welcome</h2>
+          <div class="box mt-5">
+            <h3 class="text-2xl text-white mb-3">Journey to Kuakata</h3>
+            <label for="kuakata-tour-ticket" class="text-white inline-block">NO. of Tickets:</label>
+            <button id="kuakata-plus" class="px-3 py-1 bg-white"><i class="fas fa-plus"></i></button>
+            <button id="kuakata-minus" class="px-3 py-1 bg-white"><i class="fas fa-minus"></i></button>
+            <input type="number" id="kuakata-tour-ticket" class="border mt-2 w-full rounded-lg border-gray-900 px-2 py-1 outline-none" disabled value="0" placeholder="NO. of Ticket">
+            <h4 class="text-white text-lg text-right border-b pb-2">Kuakata Tour Costs: $<span id="kuakata-tour-total">00.00</span></h4>
+          </div>
+          <div class="box mt-5">
+            <h3 class="text-2xl text-white mb-3">Journey to Cox's Bazar</h3>
+            <label for="coxbazar-tour" class="text-white inline-block">NO. of Tickets:</label>
+            <button id="coxbazar-plus" class="px-3 py-1 bg-white"><i class="fas fa-plus"></i></button>
+            <button id="coxbazar-minus" class="px-3 py-1 bg-white"><i class="fas fa-minus"></i></button>
+            <input type="number" id="coxbazar-tour-ticket" class="border mt-2 w-full rounded-lg border-gray-900 px-2 py-1 outline-none" disabled value="0" placeholder="NO. of Ticket">
+            <h4 class="text-white text-lg text-right border-b pb-2">Cox;s Bazar Tour Costs: $<span id="coxbazar-tour-total">00.00</span></h4>
+          </div>
+
+          <div class="mt-8 border-b pb-1">
+            <h3 class="text-xl text-right text-white font-bold">Total Journey Csots Will be: $<span id="total-costs">00.00</span></h3>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  
+
+  <!-- script -->
+  <script src="./js/index.js"></script>
+</body>
+</html>
